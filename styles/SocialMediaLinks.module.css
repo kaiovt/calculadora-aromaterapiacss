@@ -1,0 +1,19 @@
+/* Estilos para os ícones das redes sociais */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.socialIcon {
+  font-size: 2rem;
+  color: #30c905; /* Verde Menta */
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  color: #b22d71; /* Lavanda */
+  transform: scale(1.1);
+}

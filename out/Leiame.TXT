@@ -1,0 +1,54 @@
+Manual de Hospedagem de Página Estática na HostGator com a Pasta out
+1. Acessar o cPanel da HostGator
+A primeira coisa que a pessoa precisa fazer é acessar o painel de controle do servidor (cPanel) da HostGator. Isso pode ser feito da seguinte forma:
+
+Abra o navegador e acesse: https://gator.hostgator.com.br/cpanel.
+Faça login com as credenciais fornecidas pela HostGator (usuário e senha).
+2. Acessar o Gerenciador de Arquivos (File Manager)
+Depois de acessar o cPanel, a pessoa precisa ir para o Gerenciador de Arquivos para poder fazer o upload da pasta out para o servidor. Siga os passos abaixo:
+
+No cPanel, encontre e clique em File Manager (Gerenciador de Arquivos), que está sob a seção "Arquivos".
+Clique na opção public_html, que é a pasta principal onde os arquivos do site devem ser colocados. Isso é importante porque essa pasta é a raiz do seu site na web.
+3. Subir a Pasta out para o Servidor
+Agora, a pessoa precisa fazer o upload da pasta out que você gerou.
+
+Clique no botão Upload (ícone de seta para cima no topo da tela).
+Na tela de upload, selecione o arquivo .zip contendo a pasta out (caso tenha compactado a pasta) ou, se preferir, envie diretamente os arquivos.
+Após o upload, volte ao Gerenciador de Arquivos e descompacte o arquivo .zip (se tiver compactado a pasta). Clique com o botão direito sobre o arquivo .zip e escolha Extract (Extrair).
+Os arquivos da pasta out serão extraídos. Certifique-se de que o conteúdo da pasta out (os arquivos HTML, CSS, JS e outros) esteja dentro da pasta public_html.
+4. Verificar a Estrutura dos Arquivos
+Certifique-se de que a estrutura de arquivos extraídos dentro da pasta public_html esteja correta. Deve ser algo assim:
+
+scss
+Copiar código
+public_html/
+├── index.html
+├── 404.html
+├── assets/
+│   ├── (outros arquivos estáticos, como imagens, fontes, etc.)
+└── ...
+O arquivo index.html deve estar diretamente dentro de public_html, pois é o arquivo que será carregado como página inicial.
+Outros arquivos, como CSS, JS, imagens, devem estar dentro das pastas correspondentes (como assets ou outras subpastas).
+5. Configurar Redirecionamentos (se necessário)
+Se o site antigo da pessoa for baseado em WordPress ou outro sistema e você quiser evitar que haja conflito com os arquivos estáticos, é possível configurar redirecionamentos no .htaccess para garantir que as páginas certas sejam carregadas.
+
+No Gerenciador de Arquivos, localize e edite o arquivo .htaccess (caso não exista, crie um novo).
+Adicione redirecionamentos, caso necessário, para garantir que as URLs sejam corretamente direcionadas.
+6. Testar o Site
+Após fazer o upload dos arquivos e garantir que a estrutura está correta, a pessoa pode testar o site no navegador.
+
+Abra o navegador e vá para o endereço do site (geralmente será algo como http://seusite.com.br).
+O site gerado pela exportação do Next.js deve ser carregado corretamente. Caso contrário, verifique se os arquivos foram carregados na pasta certa e se o index.html está no local correto.
+7. Configurar o Domínio (se necessário)
+Caso o domínio do site não esteja configurado corretamente para o servidor da HostGator:
+
+No cPanel, vá para Domínios.
+Adicione ou verifique a configuração de apontamento do domínio para o servidor HostGator.
+Após a configuração do domínio, aguarde a propagação DNS (pode levar algumas horas).
+8. Finalizar e Monitorar
+Agora que o site está hospedado, a pessoa pode acompanhar o desempenho e fazer alterações necessárias conforme o site for sendo acessado. Para quaisquer atualizações, basta enviar novos arquivos ou fazer alterações no Gerenciador de Arquivos.
+
+Dicas Adicionais:
+SEO e Meta Tags: Certifique-se de que as páginas geradas tenham meta tags e título adequados para SEO. Se precisar de ajustes, eles podem ser feitos nos arquivos HTML gerados.
+Backups: É sempre bom fazer backups dos arquivos antes de enviar para o servidor, especialmente se houver outros sites ou páginas em execução na mesma conta.
+Com esse manual, a pessoa poderá facilmente colocar o site gerado com Next.js em produção no servidor da HostGator, hospedando os arquivos estáticos sem a necessidade de usar um sistema dinâmico como o WordPress.

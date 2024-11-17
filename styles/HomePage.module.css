@@ -1,0 +1,141 @@
+/* Contêiner principal da calculadora */
+.calculatorContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+ 
+}
+
+/* Fundo de baixo da pagina */
+.pageContainer{
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8; /* Branco para os contêineres principais */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contêiner da imagem do perfil */
+.profileImageContainer {
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 400px; /* Limita a largura máxima para a imagem */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  padding: 20px;
+  text-align: center; /* Centraliza o conteúdo (imagem) */
+  background-color: #FFFFFF; /* Fundo branco para destacar a imagem */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+  position: relative;
+}
+
+.profileImageContainer img {
+  width: 100%; /* Faz a imagem ocupar 100% do tamanho do contêiner */
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho máximo */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px; /* Bordas arredondadas para um visual mais suave */
+}
+
+@media (max-width: 768px) {
+  .profileImageContainer {
+    max-width: 90%; /* Reduz o tamanho máximo da imagem em telas menores */
+    padding: 10px; /* Ajusta o padding para telas pequenas */
+  }
+}
+/* Input para descrição do blend */
+.blendInput {
+  margin-bottom: 20px;
+  border: 2px solid #B39DDB; /* Lavanda */
+}
+
+/* Contêiner para cada composição */
+.compositionItem {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+/* Itens extras */
+.extraItem {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Input para os extras */
+.extraInput {
+  margin-bottom: 10px;
+}
+
+/* Seção de totais */
+.totalSection {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+
+/* COISAS NOVAS */
+/* Contêiner pai dos botões */
+.buttonGroup {
+  display: flex; /* Habilita o Flexbox */
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  align-items: center; /* Alinha os botões verticalmente no centro */
+  gap: 20px; /* Espaço entre os botões */
+  width: 100%; /* Garantir que o contêiner ocupe toda a largura disponível */
+  text-align: center; /* Alinha o conteúdo (botões) ao centro */
+  margin-top: 10px; /* Espaço superior para separar dos outros elementos */
+  margin-bottom: 10px; /* Espaço inferior para separar da parte de baixo */
+}
+
+
+/* Contêiner para os botões */
+.buttonContainer {
+  display: flex; /* Flexbox para organizar os botões */
+  justify-content: center; /* Centraliza os botões */
+  align-items: center; /* Alinha os botões verticalmente */
+  gap: 20px; /* Espaço entre os botões */
+  width: 100%; /* Garantir que o contêiner ocupe toda a largura disponível */
+  height: 100%; /* Garantir que o contêiner ocupe toda a altura disponível */
+}
+
+/* Estilo básico dos botões */
+.button {
+  background-color: #4CAF50; /* Cor primária: Verde folha */
+  color: white; /* Texto branco */
+  padding: 12px 24px; /* Tamanho confortável para os botões */
+  font-size: 1rem; /* Tamanho da fonte */
+  font-weight: bold; /* Fonte em negrito para destaque */
+  border: none; /* Remove bordas */
+  border-radius: 8px; /* Bordas arredondadas para um visual suave */
+  cursor: pointer; /* Cursor de clique */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+/* Estilo do botão no hover (quando o mouse passa por cima) */
+.button:hover {
+  background-color: #B39DDB; /* Cor secundária: Verde limão suave */
+  transform: translateY(-3px); /* Leve efeito de elevação */
+}
+
+/* Estilo do botão quando clicado */
+.button:active {
+  background-color: #2E7D32; /* Cor escura: Verde floresta */
+  transform: translateY(1px); /* Efeito de pressionar */
+}
+
+
+

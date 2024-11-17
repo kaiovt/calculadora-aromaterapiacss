@@ -1,0 +1,247 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif; /* Definir uma fonte básica */
+  background-color: #fdf9f9; /* Cor neutra: Cinza claro */
+  color: #2E7D32; /* Cor de texto escura: Verde floresta */
+  margin: 0; /* Remove margens padrão do navegador */
+  padding: 0; /* Remove o padding padrão do navegador */
+  min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+}
+
+
+input {
+  font-size: 1rem;
+  padding: 8px;
+  border: 1px solid #4CAF50; /* Primária - Verde folha */
+  border-radius: 5px;
+  width: 100%; /* O campo ocupa todo o espaço disponível */
+  background-color: #F5F5F5; /* Neutra - Cinza claro */
+  color: #2E7D32; /* Escura - Verde flocontainerresta */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  margin: 10px auto; /* Espaçamento em cima e embaixo + centralizado */
+}
+
+/* Foco no campo de input */
+input:focus {
+  outline: none;
+  border-color: #8BC34A; /* Secundária - Verde limão suave */
+  background-color: #fff; /* Fundo branco ao focar no input */
+}
+
+.totais{
+  font-size: 1rem; /* Tamanho de fonte */
+  padding: 8px;
+  border: 1px solid #4CAF50; /* Primária - Verde folha */
+  border-radius: 5px;
+  width: 100%; /* O campo ocupa todo o espaço disponível */
+  background-color: #F5F5F5; /* Neutra - Cinza claro */
+  color: #2E7D32; /* Escura - Verde floresta */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  margin: 10px auto; /* Espaçamento em cima e embaixo + centralizado */
+  display: block; /* Faz com que o label ocupe a linha inteira */
+  font-weight: bold; /* Deixa o texto do label em negrito */
+}
+.compositionInput{
+  font-size: 1rem; /* Tamanho de fonte */
+  padding: 8px;
+  border: 1px solid #4CAF50; /* Primária - Verde folha */
+  border-radius: 5px;
+  width: 100%; /* O campo ocupa todo o espaço disponível */
+  background-color: #F5F5F5; /* Neutra - Cinza claro */
+  color: #2E7D32; /* Escura - Verde floresta */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  margin: 10px auto; /* Espaçamento em cima e embaixo + centralizado */
+  display: block; /* Faz com que o label ocupe a linha inteira */
+  font-weight: bold; /* Deixa o texto do label em negrito */
+}
+
+
+
+/* Estilo para o título principal (h1) */
+h1 {
+  font-size: 2.5rem; /* Tamanho de fonte grande para dar destaque */
+  font-weight: bold; /* Fonte em negrito para maior impacto */
+  color: #4CAF50; /* Cor primária: Verde folha */
+  text-align: center; /* Centraliza o título */
+  text-transform: capitalize; /* Primeira letra de cada palavra em maiúscula */
+  margin: 20px 0; /* Espaçamento superior e inferior */
+  padding: 10px;
+  background-color: transparent; /* Remove o fundo, deixando transparente */
+  border-radius: 8px; /* Bordas arredondadas para suavizar o visual */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+}
+
+
+
+h2 {
+  font-size: 1.2rem; /* Tamanho da fonte */
+  font-weight: bold; /* Fonte em negrito */
+  color: #4CAF50; /* Cor primária: Verde folha */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 15px; /* Espaço acima para separar da imagem */
+  padding: 5px; /* Um pequeno padding para melhor espaçamento */
+  border-radius: 5px; /* Bordas arredondadas para um visual suave */
+  background-color: #F5F5F5; /* Cor neutra de fundo */
+  max-width: 80%; /* Limita a largura do nome */
+  margin-left: auto; /* Alinha o nome à esquerda do contêiner */
+  margin-right: auto; /* Alinha o nome à direita do contêiner */
+}
+
+h3 {
+  font-size: 1.2rem; /* Tamanho da fonte */
+  font-weight: bold; /* Fonte em negrito */
+  color: #4CAF50; /* Cor primária: Verde folha */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 15px; /* Espaço acima para separar da imagem */
+  padding: 5px; /* Um pequeno padding para melhor espaçamento */
+  border-radius: 5px; /* Bordas arredondadas para um visual suave */
+  background-color: #F5F5F5; /* Cor neutra de fundo */
+  max-width: 80%; /* Limita a largura do nome */
+  margin-left: auto; /* Alinha o nome à esquerda do contêiner */
+  margin-right: auto; /* Alinha o nome à direita do contêiner */
+}
+
+h4 {
+  font-size: 1.2rem; /* Tamanho da fonte */
+  font-weight: bold; /* Fonte em negrito */
+  color: #4CAF50; /* Cor primária: Verde folha */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 15px; /* Espaço acima para separar da imagem */
+  padding: 5px; /* Um pequeno padding para melhor espaçamento */
+  border-radius: 5px; /* Bordas arredondadas para um visual suave */
+  background-color: #F5F5F5; /* Cor neutra de fundo */
+  max-width: 80%; /* Limita a largura do nome */
+  margin-left: auto; /* Alinha o nome à esquerda do contêiner */
+  margin-right: auto; /* Alinha o nome à direita do contêiner */
+}
+
+/* Estilo para o parágrafo (nome do cliente) abaixo da imagem */
+p {
+  font-size: 1.2rem; /* Tamanho da fonte */
+  font-weight: bold; /* Fonte em negrito */
+  color: #4CAF50; /* Cor primária: Verde folha */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 15px; /* Espaço acima para separar da imagem */
+  padding: 5px; /* Um pequeno padding para melhor espaçamento */
+  border-radius: 5px; /* Bordas arredondadas para um visual suave */
+  max-width: 80%; /* Limita a largura do nome */
+  margin-left: auto; /* Alinha o nome à esquerda do contêiner */
+  margin-right: auto; /* Alinha o nome à direita do contêiner */
+  background-color: transparent; /* Remove o fundo, deixando transparente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para dar destaque */
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .profileName {
+    font-size: 1rem; /* Reduz o tamanho da fonte em telas pequenas */
+    margin-top: 10px; /* Reduz o espaço acima da imagem */
+    max-width: 90%; /* Aumenta o máximo da largura em dispositivos móveis */
+  }
+}
+
+/* Botão de remover */
+/* Contêiner de cada composição */
+.compositionItem {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #f7f7f7; /* Cor de fundo leve */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Labels das composições */
+.compositionLabel2 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #4CAF50; /* Verde folha para as labels */
+  font-weight: bold;
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Garante que o label ocupe toda a largura do seu contêiner */
+
+
+}
+.compositionLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #4CAF50; /* Verde folha para as labels */
+  font-weight: bold;
+}
+
+/* Espaçamento entre labels e valores */
+.compositionItem span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #2E7D32; /* Verde floresta para os valores */
+}
+
+/* Botão de remover */
+.buttonRemove {
+  background-color: #E57373; /* Vermelho claro */
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px; /* Espaçamento superior */
+  width: 100%; /* Faz o botão ocupar toda a largura disponível */
+}
+
+.buttonRemove:hover {
+  background-color: #EF5350; /* Vermelho mais intenso no hover */
+}
+
+/* Botão de adicionar nova composição */
+.buttonAdd {
+  background-color: #A5D6A7; /* Verde menta */
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Espaçamento entre o botão de adicionar e as composições */
+  display: block;
+  width: 100%;
+}
+
+.buttonAdd:hover {
+  background-color: #81C784; /* Verde menta mais intenso no hover */
+}
+
+
+.generatePdfButton {
+  display: inline-block;
+  background-color: #29a52d; /* Verde menta */
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.generatePdfButton:hover {
+  background-color: #B39DDB; /* Lavanda */
+  transform: translateY(-3px); /* Leve efeito de elevação */
+}
+
+/* Centraliza o botão */
+.buttonContainer {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: 20px; /* Espaçamento superior, se necessário */
+}
