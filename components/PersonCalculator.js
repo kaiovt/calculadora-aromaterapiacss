@@ -47,32 +47,45 @@ const PersonCalculator = () => {
   const totalExtras = 7;
 
   return (
+    
+<div className="containerpg2">
+  {/* Dropdown para selecionar faixa etária */}
+  <label className="compositionLabel2" htmlFor="ageRange">Selecione a Faixa Etária:</label>
+  <select className="compositionInput2"
+    value={ageRange} 
+    onChange={handleAgeChange}
+  >
+    <option value="" disabled>Selecione a Faixa Etária</option>
+    {Object.keys(ageData).map((age) => (
+      <option className="compositionInput2" key={age} value={age}>{age}</option>
+    ))}
+  </select>
+
+  {/* Exibição das Gotas de Óleo Essencial e Diluição Máxima */}
+  {ageRange && (
     <div>
-      <h3>Calculadora de Aromaterapia - Kaio Valério</h3>
+      <h5>Gotas de Óleo Essencial</h5>
+      <div className="gotacontainer">
+      <div className ="gotacss">
+      <p2 id = "centralizartexto">{essentialOilDrops}</p2>
+      </div>
+      </div>
+      <h5>Diluição Máxima (% de essência)</h5>
+      <div class="perfumecontainer">
+      <div class="corpo">
+      <div class="tampa">
+      
+      <p2 id="centralizardiluicao">{maxDilution}</p2>
 
-      {/* Dropdown para selecionar faixa etária */}
-      <label className="compositionLabel2" htmlFor="ageRange">Selecione a Faixa Etária:</label>
-      <select className="compositionInput"
-        id="ageRange"
-        value={ageRange} 
-        onChange={handleAgeChange}
-      >
-        <option value="" disabled>Selecione a Faixa Etária</option>
-        {Object.keys(ageData).map((age) => (
-          <option key={age} value={age}>{age}</option>
-        ))}
-      </select>
+      
+      </div>
+      </div>  
+      </div>
+    </div>
+  )}
 
-      {/* Exibição das Gotas de Óleo Essencial e Diluição Máxima */}
-      {ageRange && (
-        <div>
-          <h4>Gotas de Óleo Essencial</h4>
-          <p>{essentialOilDrops}</p>
 
-          <h4>Diluição Máxima (% de essência)</h4>
-          <p>{maxDilution}</p>
-        </div>
-      )}
+
 
       {/* Chamando o componente GeneratePDF e passando as props necessárias */}
       <GeneratePDFSC 

@@ -1,48 +1,89 @@
-/* Contêiner principal da calculadora */
+/* ----------------------------CONTAINERS DA PAGINA------------------ */
+/* 1° Contêiner principal da calculadora */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.container h1 {
+  position: relative;
+  font-size: 3rem; /* Ajuste o tamanho conforme necessário */
+  text-align: center;
+  margin-top: 020px;
+  color: #9B59B6; /* Cor suave */
+  font-weight: bold;
+  text-transform: uppercase; /* Opcional, pode deixar o texto em maiúsculas */
+  margin-bottom: 10;
+}
+
+
+
+/* 2° Contêiner principal da calculadora */
+.pageContainer {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* 3° Contêiner principal da calculadora */
 .calculatorContainer {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   background-color: transparent;
   border-radius: 10px;
- 
+  
 }
 
-/* Fundo de baixo da pagina */
-.pageContainer{
-  background-color: transparent;
-  padding: 20px;
-  border-radius: 10px;
-
-}
-.container{
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f8f8f8; /* Branco para os contêineres principais */
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Contêiner da imagem do perfil */
+/* Contêiner da imagem do perfil Moldura */
 .profileImageContainer {
-  width: 100%; /* Ocupa toda a largura disponível */
-  max-width: 400px; /* Limita a largura máxima para a imagem */
-  margin: 0 auto; /* Centraliza a imagem horizontalmente */
-  padding: 20px;
-  text-align: center; /* Centraliza o conteúdo (imagem) */
-  background-color: #FFFFFF; /* Fundo branco para destacar a imagem */
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
-  position: relative;
+  position: absolute;
+  top: 10%; /* Move a imagem mais para o topo */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+  width: 120px; /* Tamanho da imagem */
+  height: 120px; /* Tamanho da imagem */
+  border-radius: 50%; /* Deixa a imagem redonda */
+  overflow: hidden; /* Garante que a imagem não ultrapasse o limite da borda arredondada */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+/* ----------------------------FIM CONTAINAERS---------------------------------------- */
+
+/*----------------------------- Imagem do perfil --------------------------------*/
+/*----------------------------- Imagem do perfil --------------------------------*/
+.profileImageContainer {
+  position: absolute;
+  top: 10%; /* Ajuste a distância do topo conforme necessário */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza a imagem horizontalmente */
+  width: 200px; /* Aumenta o tamanho da imagem */
+  height: 200px; /* Aumenta o tamanho da imagem */
+  border-radius: 50%; /* Deixa a imagem redonda */
+  overflow: hidden; /* Impede que a imagem ultrapasse o limite */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra para dar destaque */
+  margin-top: 80px; /* Ajuste o espaçamento acima da imagem conforme necessário */
 }
 
 .profileImageContainer img {
-  width: 100%; /* Faz a imagem ocupar 100% do tamanho do contêiner */
-  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho máximo */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 10px; /* Bordas arredondadas para um visual mais suave */
+  width: 100%; /* Faz a imagem ocupar todo o container */
+  height: 100%; /* Garante que a altura da imagem seja 100% do container */
+  object-fit: cover; /* A imagem irá cobrir o container mantendo a proporção */
+}
+
+/*------------------------------Fim Imagem do Perfil----------------------------- */
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .profileName {
+    font-size: 1rem; /* Reduz o tamanho da fonte em telas pequenas */
+    margin-top: 10px; /* Reduz o espaço acima da imagem */
+    max-width: 90%; /* Aumenta o máximo da largura em dispositivos móveis */
+  }
 }
 
 @media (max-width: 768px) {
@@ -51,91 +92,213 @@
     padding: 10px; /* Ajusta o padding para telas pequenas */
   }
 }
-/* Input para descrição do blend */
-.blendInput {
-  margin-bottom: 20px;
-  border: 2px solid #B39DDB; /* Lavanda */
-}
-
-/* Contêiner para cada composição */
-.compositionItem {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
 
 
-/* Itens extras */
-.extraItem {
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  padding: 10px;
-}
 
-/* Input para os extras */
-.extraInput {
-  margin-bottom: 10px;
-}
+/*------------------------ BOTAO DE TROCAR AS PAGINAS---------------------------------- */
 
-/* Seção de totais */
-.totalSection {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-}
-
-
-/* COISAS NOVAS */
 /* Contêiner pai dos botões */
 .buttonGroup {
-  display: flex; /* Habilita o Flexbox */
-  justify-content: center; /* Centraliza os botões horizontalmente */
-  align-items: center; /* Alinha os botões verticalmente no centro */
-  gap: 20px; /* Espaço entre os botões */
-  width: 100%; /* Garantir que o contêiner ocupe toda a largura disponível */
-  text-align: center; /* Alinha o conteúdo (botões) ao centro */
-  margin-top: 10px; /* Espaço superior para separar dos outros elementos */
-  margin-bottom: 10px; /* Espaço inferior para separar da parte de baixo */
-}
-
-
-/* Contêiner para os botões */
-.buttonContainer {
-  display: flex; /* Flexbox para organizar os botões */
-  justify-content: center; /* Centraliza os botões */
-  align-items: center; /* Alinha os botões verticalmente */
-  gap: 20px; /* Espaço entre os botões */
-  width: 100%; /* Garantir que o contêiner ocupe toda a largura disponível */
-  height: 100%; /* Garantir que o contêiner ocupe toda a altura disponível */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 1px;
 }
 
 /* Estilo básico dos botões */
 .button {
-  background-color: #4CAF50; /* Cor primária: Verde folha */
-  color: white; /* Texto branco */
-  padding: 12px 24px; /* Tamanho confortável para os botões */
-  font-size: 1rem; /* Tamanho da fonte */
-  font-weight: bold; /* Fonte em negrito para destaque */
-  border: none; /* Remove bordas */
-  border-radius: 8px; /* Bordas arredondadas para um visual suave */
-  cursor: pointer; /* Cursor de clique */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+  display: inline-block;
+  background-color:#a36cc8; /* Fundo transparente */
+  color: #f6f1fa; /* Cor clara da paleta */
+  padding: 10px 5px; /* Tamanho reduzido */
+  font-size: 1.4rem; /* Tamanho reduzido da fonte */
+  font-weight: bold;
+  border: 2px solid #9B59B6; /* Borda com cor da paleta */
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  box-shadow: -10px 20px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para o estado normal */
+
 }
 
-/* Estilo do botão no hover (quando o mouse passa por cima) */
+/* Efeito no hover (sem fundo, com brilho metálico) */
 .button:hover {
-  background-color: #B39DDB; /* Cor secundária: Verde limão suave */
-  transform: translateY(-3px); /* Leve efeito de elevação */
+  background-color: #895aae;
+  color: #f6f1fa; /* Cor clara da paleta */
+  border-color: #a36cc8; /* Borda com cor metálica */
+  transform: scale(1.05); /* Leve aumento de tamanho */
+  box-shadow: 0 0 8px rgba(163, 108, 200, 0.7), 0 0 15px rgba(163, 108, 200, 0.6); /* Sombra suave metálica */
 }
 
-/* Estilo do botão quando clicado */
+/* Efeito quando o botão é pressionado (clicado) */
 .button:active {
-  background-color: #2E7D32; /* Cor escura: Verde floresta */
-  transform: translateY(1px); /* Efeito de pressionar */
+  transform: translateY(2px); /* Efeito de "afundar" ao ser clicado */
+  border-color: #9B59B6; /* Mantém a cor da borda ao clicar */
 }
 
 
 
+.footer {
+  background-color: transparent; /* Fundo transparente */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Adiciona padding */
+  color: transparent; /* Torna o texto transparente para o efeito */
+  font-weight: bold; /* Deixa o texto em negrito */
+  background: linear-gradient(45deg, #4b337c, #7b4d9f); /* Gradiente no fundo */
+  -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+  background-clip: text; /* Compatibilidade para outros navegadores */
+  transition: all 0.5s ease-in-out; /* Animação suave para todos os efeitos */
+}
+
+.footer:hover {
+  color: transparent; /* Mantém o texto transparente para o efeito */
+  background: linear-gradient(45deg, #9a5bb7, #c084d5); /* Gradiente mais claro ao passar o mouse */
+  -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+  background-clip: text; /* Compatibilidade para outros navegadores */
+}
+
+
+.nomecliente {
+  text-align: center;
+  background-color: transparent;
+  margin-top: -10px;
+  margin-bottom: -30px;
+  font-size: 1.8rem; /* Aumenta o tamanho da fonte */
+  font-weight: bold; /* Deixa o texto em negrito */
+  color: #333; /* Cor do texto para maior contraste, ajuste conforme necessário */
+}
+
+
+/* Contêiner do canteiro */
+.rosegarden {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to top, #65408a, #432c74); /* Ajustado com a paleta */
+  border-top: 3px solid #4c3172;
+  clip-path: polygon(0% 100%, 0% 80%, 10% 85%, 20% 75%, 30% 80%, 40% 70%, 50% 75%, 60% 70%, 70% 75%, 80% 70%, 90% 85%, 100% 80%, 100% 100%);
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+/* Estilo das rosas */
+.cssrosestem {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #e6b8f6, #ac89c9); /* Rosa com tons da paleta */
+  border-radius: 50%;
+  box-shadow: 
+    0 0 10px rgba(0, 0, 0, .5),
+    10px 0 0 #e6b8f6, 0 10px 0 #ac89c9,
+    -10px 0 0 #e6b8f6, 0 -10px 0 #ac89c9;
+  position: relative;
+}
+
+/* Caule das rosas */
+.cssrosestem::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  width: 5px;
+  height: 50px;
+  background: linear-gradient(to bottom, #4b337c, #32293d); /* Ajustado com a paleta */
+  border-radius: 3px;
+  transform: translateX(-50%);
+}
+
+/* Folhas */
+.cssrosestem::before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 20px;
+  height: 10px;
+  background: radial-gradient(circle, #4d3d6a, #2a2050); /* Ajustado com a paleta */
+  border-radius: 10px;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: -1;
+}
+
+/* Estilo das nuvens */
+.cloudsmallcloud1, .cloudsmallcloud2, .cloudsmallcloud3 {
+  position: absolute;
+  background: #7044a0; /* Cor azul roxa */
+  border-radius: 50%;
+  box-shadow: 20px 20px 0px #bc6cd9, -20px 10px 0px #e6b8f6; /* Sombras em roxo e lilás */
+  animation: moveClouds 30s linear infinite;
+  opacity: 0.8; /* Suaviza as nuvens */
+  will-change: transform; /* Melhora o desempenho */
+}
+
+/* Tamanhos das nuvens */
+.cloudsmallcloud1 {
+  width: 60px;
+  height: 40px;
+  top: 20px;
+  left: 10%;
+}
+
+.cloudsmallcloud2 {
+  width: 120px;
+  height: 80px;
+  top: 40px;
+  left: 30%;
+}
+
+.cloudsmallcloud3 {
+  width: 180px;
+  height: 120px;
+  top: 60px;
+  left: 70%;
+}
+
+/* Animação das nuvens */
+@keyframes moveClouds {
+  0% {
+    transform: translateX(-200px); /* Começa fora da tela à esquerda */
+  }
+  100% {
+    transform: translateX(100vw); /* Move-se até a direita da tela */
+  }
+}
+
+
+.sky h1 {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem; /* Ajuste o tamanho conforme necessário */
+  color: #f6f1fa; /* Usando uma cor clara da paleta */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra suave para destacar o texto */
+  z-index: 10;
+  text-align: center;
+  letter-spacing: 2px; /* Distância entre as letras */
+  animation: floatTitle 5s ease-in-out infinite; /* Animação para um leve movimento de flutuação */
+}
+
+@keyframes floatTitle {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px); /* Eleva o título */
+  }
+  100% {
+    transform: translateX(-50%) translateY(0); /* Retorna à posição inicial */
+  }
+}

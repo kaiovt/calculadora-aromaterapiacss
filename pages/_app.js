@@ -7,7 +7,17 @@ function MyApp({ Component, pageProps }) {
     <div className={styles.container}>
       {/* Cabeçalho */}
       <header>
-        <h1>TÍTULO DO CLIENTE</h1>
+        
+        <div className={styles.sky}>
+    
+    
+    <div className={styles.cloudsmallcloud1}></div>
+    
+    <div className={styles.cloudsmallcloud3}></div>
+    <div className={styles.cloudsmallcloud2}></div>
+    <h1>TÍTULO DO CLIENTE</h1>
+</div>
+
       </header>
 
       {/* Imagem de logo no topo */}
@@ -17,6 +27,7 @@ function MyApp({ Component, pageProps }) {
           alt="Logo Aromaterapia"
           className={styles.profileImage}
         />
+     
       </div>
 
       {/* Componente da página */}
@@ -25,6 +36,20 @@ function MyApp({ Component, pageProps }) {
       {/* Rodapé */}
       <footer className={styles.footer}>
         <p>&copy; 2024 Aromaterapia Inc.</p>
+       
+
+
+
+<div class={styles.rosegarden}>
+  <div class={styles.cssrosestem}></div>
+  <div class={styles.cssrosestem}></div>
+  <div class={styles.cssrosestem}></div>
+  <div class={styles.cssrosestem}></div>
+  <div class={styles.cssrosestem}></div>
+  <div class={styles.cssrosestem}></div>
+  <div class={styles.cssrosestem}></div>
+</div>
+
       </footer>
     </div>
   );

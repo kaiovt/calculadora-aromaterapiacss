@@ -1,228 +1,257 @@
 /* Estilos globais */
+
+/* --------PLANO DE FUNDO DO SITE------------- */
 body {
-  font-family: Arial, sans-serif; /* Definir uma fonte básica */
-  background-color: #fdf9f9; /* Cor neutra: Cinza claro */
-  color: #2E7D32; /* Cor de texto escura: Verde floresta */
-  margin: 0; /* Remove margens padrão do navegador */
-  padding: 0; /* Remove o padding padrão do navegador */
-  min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+  background: linear-gradient(to bottom, #e7adef 20%, #9B59B6 40%, #6A4C9C 60%, #4B3F72 100%);
+  font-family: Arial, sans-serif;
+  /* Definir uma fonte básica */
+  background-size: 100% 100%;
+  min-height: 100vh;
+  /* Garante que o body ocupe toda a altura da tela */
+  margin: 0;
+  padding: 0;
+  /* Remove o padding padrão do navegador */
 }
 
+/* --------FIM PLANO DE FUNDO DO SITE------------- */
 
-input {
-  font-size: 1rem;
-  padding: 8px;
-  border: 1px solid #4CAF50; /* Primária - Verde folha */
-  border-radius: 5px;
-  width: 100%; /* O campo ocupa todo o espaço disponível */
-  background-color: #F5F5F5; /* Neutra - Cinza claro */
-  color: #2E7D32; /* Escura - Verde flocontainerresta */
-  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
-  margin: 10px auto; /* Espaçamento em cima e embaixo + centralizado */
-}
-
-/* Foco no campo de input */
-input:focus {
-  outline: none;
-  border-color: #8BC34A; /* Secundária - Verde limão suave */
-  background-color: #fff; /* Fundo branco ao focar no input */
-}
-
-.totais{
-  font-size: 1rem; /* Tamanho de fonte */
-  padding: 8px;
-  border: 1px solid #4CAF50; /* Primária - Verde folha */
-  border-radius: 5px;
-  width: 100%; /* O campo ocupa todo o espaço disponível */
-  background-color: #F5F5F5; /* Neutra - Cinza claro */
-  color: #2E7D32; /* Escura - Verde floresta */
-  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
-  margin: 10px auto; /* Espaçamento em cima e embaixo + centralizado */
-  display: block; /* Faz com que o label ocupe a linha inteira */
-  font-weight: bold; /* Deixa o texto do label em negrito */
-}
-.compositionInput{
-  font-size: 1rem; /* Tamanho de fonte */
-  padding: 8px;
-  border: 1px solid #4CAF50; /* Primária - Verde folha */
-  border-radius: 5px;
-  width: 100%; /* O campo ocupa todo o espaço disponível */
-  background-color: #F5F5F5; /* Neutra - Cinza claro */
-  color: #2E7D32; /* Escura - Verde floresta */
-  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
-  margin: 10px auto; /* Espaçamento em cima e embaixo + centralizado */
-  display: block; /* Faz com que o label ocupe a linha inteira */
-  font-weight: bold; /* Deixa o texto do label em negrito */
-}
-
-
-
-/* Estilo para o título principal (h1) */
-h1 {
-  font-size: 2.5rem; /* Tamanho de fonte grande para dar destaque */
-  font-weight: bold; /* Fonte em negrito para maior impacto */
-  color: #4CAF50; /* Cor primária: Verde folha */
-  text-align: center; /* Centraliza o título */
-  text-transform: capitalize; /* Primeira letra de cada palavra em maiúscula */
-  margin: 20px 0; /* Espaçamento superior e inferior */
-  padding: 10px;
-  background-color: transparent; /* Remove o fundo, deixando transparente */
-  border-radius: 8px; /* Bordas arredondadas para suavizar o visual */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
-}
-
-
-
-h2 {
-  font-size: 1.2rem; /* Tamanho da fonte */
-  font-weight: bold; /* Fonte em negrito */
-  color: #4CAF50; /* Cor primária: Verde folha */
-  text-align: center; /* Centraliza o texto */
-  margin-top: 15px; /* Espaço acima para separar da imagem */
-  padding: 5px; /* Um pequeno padding para melhor espaçamento */
-  border-radius: 5px; /* Bordas arredondadas para um visual suave */
-  background-color: #F5F5F5; /* Cor neutra de fundo */
-  max-width: 80%; /* Limita a largura do nome */
-  margin-left: auto; /* Alinha o nome à esquerda do contêiner */
-  margin-right: auto; /* Alinha o nome à direita do contêiner */
-}
-
-h3 {
-  font-size: 1.2rem; /* Tamanho da fonte */
-  font-weight: bold; /* Fonte em negrito */
-  color: #4CAF50; /* Cor primária: Verde folha */
-  text-align: center; /* Centraliza o texto */
-  margin-top: 15px; /* Espaço acima para separar da imagem */
-  padding: 5px; /* Um pequeno padding para melhor espaçamento */
-  border-radius: 5px; /* Bordas arredondadas para um visual suave */
-  background-color: #F5F5F5; /* Cor neutra de fundo */
-  max-width: 80%; /* Limita a largura do nome */
-  margin-left: auto; /* Alinha o nome à esquerda do contêiner */
-  margin-right: auto; /* Alinha o nome à direita do contêiner */
-}
-
-h4 {
-  font-size: 1.2rem; /* Tamanho da fonte */
-  font-weight: bold; /* Fonte em negrito */
-  color: #4CAF50; /* Cor primária: Verde folha */
-  text-align: center; /* Centraliza o texto */
-  margin-top: 15px; /* Espaço acima para separar da imagem */
-  padding: 5px; /* Um pequeno padding para melhor espaçamento */
-  border-radius: 5px; /* Bordas arredondadas para um visual suave */
-  background-color: #F5F5F5; /* Cor neutra de fundo */
-  max-width: 80%; /* Limita a largura do nome */
-  margin-left: auto; /* Alinha o nome à esquerda do contêiner */
-  margin-right: auto; /* Alinha o nome à direita do contêiner */
-}
-
-/* Estilo para o parágrafo (nome do cliente) abaixo da imagem */
-p {
-  font-size: 1.2rem; /* Tamanho da fonte */
-  font-weight: bold; /* Fonte em negrito */
-  color: #4CAF50; /* Cor primária: Verde folha */
-  text-align: center; /* Centraliza o texto */
-  margin-top: 15px; /* Espaço acima para separar da imagem */
-  padding: 5px; /* Um pequeno padding para melhor espaçamento */
-  border-radius: 5px; /* Bordas arredondadas para um visual suave */
-  max-width: 80%; /* Limita a largura do nome */
-  margin-left: auto; /* Alinha o nome à esquerda do contêiner */
-  margin-right: auto; /* Alinha o nome à direita do contêiner */
-  background-color: transparent; /* Remove o fundo, deixando transparente */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para dar destaque */
-}
-
-
-/* Responsividade */
-@media (max-width: 600px) {
-  .profileName {
-    font-size: 1rem; /* Reduz o tamanho da fonte em telas pequenas */
-    margin-top: 10px; /* Reduz o espaço acima da imagem */
-    max-width: 90%; /* Aumenta o máximo da largura em dispositivos móveis */
-  }
-}
-
-/* Botão de remover */
-/* Contêiner de cada composição */
+/*----------------- CONTANER DA CALCULADORA -----------------*/
 .compositionItem {
-  border: 1px solid #ccc;
+  border: 1px solid #9B59B6;
+  /* Roxo da paleta */
   padding: 15px;
   margin-bottom: 15px;
-  border-radius: 5px;
-  background-color: #f7f7f7; /* Cor de fundo leve */
+  border-radius: 8px;
+  /* Bordas mais arredondadas */
+  background: linear-gradient(145deg, #e7adef 20%, #9B59B6 40%, #6A4C9C 60%, #4B3F72 100%);
+  color: #ffffff;
+  /* Texto branco para contraste */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Transições suaves */
 }
 
+.compositionItem:hover {
+  transform: translateY(-5px);
+  /* Leve elevação */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  /* Sombra mais pronunciada */
+}
 /* Labels das composições */
-.compositionLabel2 {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 1rem;
-  color: #4CAF50; /* Verde folha para as labels */
-  font-weight: bold;
-  text-align: center; /* Centraliza o texto */
-  width: 100%; /* Garante que o label ocupe toda a largura do seu contêiner */
 
-
+.compositionInput2 {
+  width: 100%; /* Ocupa toda a largura disponível */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 1rem; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito no texto */
+  color: #4b337c; /* Cor do texto (baseada na paleta) */
+  background: linear-gradient(45deg, #e6b8f6, #9b59b6); /* Gradiente inspirado no Instagram */
+  border: 2px solid #4b337c; /* Borda com cor da paleta */
+  border-radius: 8px; /* Bordas arredondadas */
+  appearance: none; /* Remove a seta padrão do navegador */
+  -webkit-appearance: none; /* Compatibilidade com Webkit */
+  -moz-appearance: none; /* Compatibilidade com Firefox */
+  background-position: right 10px center; /* Alinha a seta personalizada */
+  background-repeat: no-repeat; /* Remove repetição da seta */
+  background-size: 15px; /* Tamanho da seta */
+  cursor: pointer; /* Muda o cursor para indicar interação */
+  transition: all 0.3s ease; /* Animação para transições suaves */
+  color: #fff; /* Texto da opção em branco */
 }
+
+/* Estilo para as opções do select */
+.compositionInput2 option {
+  background-color: #fff; /* Fundo branco para as opções */
+  color: #4b337c; /* Cor do texto das opções */
+  padding: 10px; /* Espaçamento das opções */
+  font-size: 1rem; /* Tamanho da fonte das opções */
+  border: 1px solid #ddd; /* Borda discreta nas opções */
+  border-radius: 5px; /* Bordas arredondadas nas opções */
+}
+
+/* Efeito ao focar no seletor */
+.compositionInput2:focus {
+  outline: none; /* Remove borda padrão ao focar */
+  border-color: #e6b8f6; /* Cor da borda ao focar */
+  box-shadow: 0 0 5px #e6b8f6; /* Adiciona um leve brilho */
+}
+
+/* Adicionando um hover */
+.compositionInput2:hover {
+  background: linear-gradient(45deg, #9b59b6, #e6b8f6); /* Inverte o gradiente no hover */
+  color: #ffffff; /* Texto branco no hover */
+}
+
+/* Ajuste para as opções ao passar o mouse (hover) */
+.compositionInput2 option:hover {
+  background-color: #b22d71; /* Cor de fundo das opções ao passar o mouse */
+  color: #fff; /* Cor do texto quando passa o mouse */
+}
+
+/*-----------------FIM CONTANER DA CALCULADORA -----------------*/
+
+/*--------------------- TITULO DA PAGINA---------------------- */
+
+/* ------------------TITUTLOS --------------------*/
+/* h2 =Blend , h3 = composiçoes extras*/
+h2,
+h3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem; /* Tamanho ajustado */
+  color: #f6f1fa; /* Cor clara da paleta */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra suave para destacar o texto */
+  font-weight: bold; /* Fonte em negrito */
+  text-align: center; /* Centraliza o texto */
+  text-transform: capitalize; /* Primeira letra de cada palavra em maiúscula */
+  margin: 2px auto; /* Espaçamento superior e inferior com alinhamento automático */
+  padding: 5px;
+  background-color: transparent; /* Fundo transparente */
+  border-radius: 8px; /* Bordas arredondadas */
+  max-width: 100%; /* Garante que o texto ocupe toda a largura disponível do contêiner */
+  display: block; /* Garante que seja tratado como bloco, centralizando com `margin auto` */
+}
+
+
+
+/*h4 = Segunda tela (Gotas de Óleo Essencial e Diluição Máxima (% de essência) */
+h4 {
+  font-family: 'Arial', sans-serif;
+  color: #f6f1fa; /* Cor clara da paleta */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra suave para destacar o texto */
+  font-size: 1.5rem; /* Tamanho ajustado */
+  font-weight: bold; /* Fonte em negrito */
+  text-align: center; /* Centraliza o texto */
+  text-transform: capitalize; /* Primeira letra de cada palavra em maiúscula */
+  margin: 20px auto; /* Espaçamento superior e inferior com alinhamento automático */
+  padding: 10px;
+  background-color: transparent; /* Fundo transparente */
+  border-radius: 8px; /* Bordas arredondadas */
+  max-width: 100%; /* Garante que o texto ocupe toda a largura disponível do contêiner */
+  display: block; /* Garante que seja tratado como bloco, centralizando com `margin auto` */
+}
+
+
+
+
+/* Estilo para o parágrafo (nome do cliente) abaixo da imagem */
+p {
+  font-size: 1.2rem;
+  /* Tamanho da fonte */
+  font-weight: bold;
+  /* Fonte em negrito */
+  color: #4b337c;
+  /* Cor ajustada da paleta */
+  text-align: center;
+  /* Centraliza o texto */
+  margin-top: 15px;
+  /* Espaço acima para separar da imagem */
+  padding: 5px;
+  /* Um pequeno padding para melhor espaçamento */
+  border-radius: 5px;
+  /* Bordas arredondadas para um visual suave */
+  max-width: 80%;
+  /* Limita a largura do nome */
+  margin-left: auto;
+  /* Alinha o nome à esquerda do contêiner */
+  margin-right: auto;
+  /* Alinha o nome à direita do contêiner */
+  background-color: transparent;
+  /* Remove o fundo, deixando transparente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra leve para dar destaque */
+}
+
+/* Titulos de todos os campos */
 .compositionLabel {
   display: block;
   margin-bottom: 5px;
   font-size: 1rem;
-  color: #4CAF50; /* Verde folha para as labels */
+  color: #4b337c;
+  /* Cor ajustada da paleta */
   font-weight: bold;
 }
 
-/* Espaçamento entre labels e valores */
-.compositionItem span {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 1rem;
-  color: #2E7D32; /* Verde floresta para os valores */
+/*--------------------- FIM TITULO DA PAGINA---------------------- */
+
+/*----------------- Responsividade----------------- */
+@media (max-width: 600px) {
+  .profileName {
+    font-size: 1rem;
+    /* Reduz o tamanho da fonte em telas pequenas */
+    margin-top: 10px;
+    /* Reduz o espaço acima da imagem */
+    max-width: 90%;
+    /* Aumenta o máximo da largura em dispositivos móveis */
+  }
 }
 
+/*----------------- FinalResponsividade----------------- */
+
+/*--------------------------------- BOTOES FIM ------------------------ */
 /* Botão de remover */
 .buttonRemove {
-  background-color: #E57373; /* Vermelho claro */
-  color: white;
+  background-color: #9B59B6;
+  /* Roxo escuro */
+  color: #ffffff;
+  /* Branco */
   padding: 10px 20px;
   font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 15px; /* Espaçamento superior */
-  width: 100%; /* Faz o botão ocupar toda a largura disponível */
+  margin-top: 20px;
+  /* Espaçamento entre o botão de adicionar e as composições */
+  display: block;
+  width: 100%;
 }
 
 .buttonRemove:hover {
-  background-color: #EF5350; /* Vermelho mais intenso no hover */
+  background-color: #6A4C9C;
+  /* Roxo mais suave */
+  transform: translateY(-3px);
+  /* Leve efeito de elevação */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  /* Sombra mais forte no hover */
 }
 
 /* Botão de adicionar nova composição */
 .buttonAdd {
-  background-color: #A5D6A7; /* Verde menta */
-  color: white;
+  background-color: #7847c4;
+  /* Roxo forte */
+  color: #ffffff;
+  /* Branco */
   padding: 10px 20px;
   font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 20px; /* Espaçamento entre o botão de adicionar e as composições */
+  margin-top: 20px;
+  /* Espaçamento entre o botão de adicionar e as composições */
   display: block;
   width: 100%;
 }
 
 .buttonAdd:hover {
-  background-color: #81C784; /* Verde menta mais intenso no hover */
+  background-color: #7044a0;
+  /* Roxo mais suave */
+  transform: translateY(-3px);
+  /* Leve efeito de elevação */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  /* Sombra mais forte no hover */
 }
 
 
+/* Botão de Gerar PDF */
 .generatePdfButton {
   display: inline-block;
-  background-color: #29a52d; /* Verde menta */
+  background-color: #80319d;
+  /* Roxo escuro */
   color: white;
   padding: 10px 20px;
   font-weight: bold;
@@ -230,18 +259,332 @@ p {
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transição suave para a cor, o movimento e a sombra */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* Sombra suave */
 }
 
 .generatePdfButton:hover {
-  background-color: #B39DDB; /* Lavanda */
-  transform: translateY(-3px); /* Leve efeito de elevação */
+  background-color: #5e46ae;
+  /* Roxo pastel */
+  transform: translateY(-3px);
+  /* Leve efeito de elevação */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  /* Sombra mais forte no hover */
 }
 
-/* Centraliza o botão */
+/* Centraliza o botão GERARPDF*/
 .buttonContainer {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  margin-top: 20px; /* Espaçamento superior, se necessário */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  margin-top: 20px;
+  /* Espaçamento superior, se necessário */
+}
+
+/*--------------------------------- BOTOES FIM ------------------------ */
+
+/*---------Pagina 2 Selecione a faixa etaria-----------*/
+.compositionLabel2 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #4b337c;
+  /* Cor ajustada da paleta */
+  font-weight: bold;
+  text-align: center;
+  /* Centraliza o texto */
+  width: 100%;
+  /* Garante que o label ocupe toda a largura do seu contêiner */
+}
+
+/*---------Pagina 2 Selecione a faixa etaria-----------*/
+
+/* --------------EXTRAS------------- */
+.compositionInput {
+  font-size: 1rem;
+  /* Tamanho da fonte */
+  padding: 10px 15px;
+  /* Espaçamento interno */
+  border: none;
+  /* Remove a borda padrão */
+  border-radius: 12px;
+  /* Arredondamento semelhante ao Instagram */
+  width: 100%;
+  /* O campo ocupa toda a largura disponível */
+  background: linear-gradient(to right, #e7adef, #9b59b6);
+  /* Gradiente suave da paleta */
+  color: #fff;
+  /* Texto branco para contraste */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+  box-sizing: border-box;
+  /* Inclui padding e borda no cálculo da largura */
+  margin: 15px auto;
+  /* Espaçamento entre os campos */
+  transition: all 0.3s ease;
+  /* Transição para interatividade */
+}
+
+/* Efeito ao passar o mouse */
+.compositionInput:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra mais intensa */
+  transform: scale(1.02);
+  /* Leve aumento no tamanho */
+}
+
+/* Efeito ao focar */
+.compositionInput:focus {
+  outline: none;
+  /* Remove a borda padrão */
+  background: linear-gradient(to right, #9b59b6, #6a4c9c);
+  /* Gradiente ajustado */
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+  /* Sombra mais destacada */
+  transform: scale(1.03);
+  /* Pequeno aumento para foco */
+}
+
+/* --------------FIM EXTRAS------------- */
+
+
+/*--------------------------- MODIDIFICAR----------------- */
+/* ----------------COR INPUT DESCRIÇÂO BLEND E EXTRAS--------------- */
+/*Blend input e Extras inputs  */
+input {
+  font-size: 1rem;
+  /* Tamanho de fonte */
+  padding: 8px;
+  border: 1px solid #4b337c;
+  /* Cor ajustada para a paleta */
+  border-radius: 5px;
+  width: 100%;
+  /* O campo ocupa todo o espaço disponível */
+  background-color: #faf1f1;
+  /* Cor neutra ajustada da paleta */
+  color: #32293d;
+  /* Cor ajustada para texto (escura) */
+  box-sizing: border-box;
+  /* Inclui padding e border no cálculo da largura */
+  margin: 10px auto;
+  /* Espaçamento em cima e embaixo + centralizado */
+  display: block;
+  /* Faz com que o label ocupe a linha inteira */
+  font-weight: bold;
+  /* Deixa o texto do label em negrito */
+}
+
+/* --------COR INPUT DESCRIÇÂO BLEND E EXTRAS--------------- */
+
+
+
+/* EXTRAS CONTAINER */
+/* Remover do Porcentagem de Lucro */
+/* Remover do Nome do Oleo, Quantidade de Óleo Vegetal (em ml):,Preço Total do Frasco: Porcentagem de Diluição de Óleo Essencial (%): */
+/* Possivelmente esta na DIv do Extra(vamos manter) e remover o resto */
+
+
+
+
+/* Fundo de todos os valores fixos*/
+.compositionItem span {
+  font-size: 1rem;
+  /* Tamanho de fonte */
+  padding: 8px;
+  border: 1px solid #4b337c;
+  /* Cor ajustada para a paleta */
+  border-radius: 5px;
+  width: 100%;
+  /* O campo ocupa todo o espaço disponível */
+  background-color: #f6f1fa;
+  /* Cor neutra ajustada da paleta */
+  color: #32293d;
+  /* Cor ajustada para texto (escura) */
+  box-sizing: border-box;
+  /* Inclui padding e border no cálculo da largura */
+  margin: 10px auto;
+  /* Espaçamento em cima e embaixo + centralizado */
+  display: block;
+  /* Faz com que o label ocupe a linha inteira */
+  font-weight: bold;
+  /* Deixa o texto do label em negrito */
+}
+
+/*---------------------------FIM MODIDIFICAR----------------- */
+
+
+
+
+
+
+/* 2 PAGINA */
+.containerpg2 {
+  width: 100%; /* Ocupa toda a largura disponível */
+  padding: 20px; /* Espaçamento interno para os elementos */
+  background: linear-gradient(45deg, #e6b8f6, #9b59b6); /* Gradiente inspirado no Instagram */
+  border-radius: 10px; /* Bordas arredondadas para suavizar o design */
+  margin: 30px auto; /* Margem em cima e embaixo, com centralização */
+  max-width: 1200px; /* Limita a largura máxima para telas grandes */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens dentro do container */
+}
+/* Efeito ao focar no seletor */
+.containerpg2:focus {
+  outline: none; /* Remove borda padrão ao focar */
+  border-color: #e6b8f6; /* Cor da borda ao focar */
+  box-shadow: 0 0 5px #e6b8f6; /* Adiciona um leve brilho */
+}
+
+/* Adicionando um hover */
+.containerpg2:hover {
+  background: linear-gradient(45deg, #9b59b6, #e6b8f6); /* Inverte o gradiente no hover */
+  color: #ffffff; /* Texto branco no hover */
+  transform: scale(1.02);
+  /* Leve aumento no tamanho */
+}
+
+/* Ajuste para as opções ao passar o mouse (hover) */
+.containerpg2 option:hover {
+  background-color: #b22d71; /* Cor de fundo das opções ao passar o mouse */
+  color: #fff; /* Cor do texto quando passa o mouse */
+}
+
+.containerpg2 h5 {
+  font-size: 2rem; /* Tamanho maior para o título */
+  color: #ffffff; /* Cor do texto conforme a paleta */
+  font-weight: bold; /* Negrito no título */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 10px; /* Espaço abaixo do título */
+  padding: 0;
+  margin: 0;
+}
+
+.containerpg2 label {
+  font-size: 3rem; /* Tamanho de fonte para os labels */
+  font-weight: bold; /* Deixa o texto do label em negrito */
+  color: #4b337c; /* Cor do texto do label */
+  margin-bottom: 10px; /* Espaço abaixo do label */
+}
+
+.containerpg2 select {
+  width: 100%; /* Ocupa toda a largura disponível */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 1rem; /* Tamanho da fonte */
+  color: #0a0a0a; /* Cor do texto */
+  background: linear-gradient(45deg, #e6b8f6, #9b59b6); /* Gradiente suave */
+  border: 2px solid #4b337c; /* Cor da borda */
+  border-radius: 8px; /* Bordas arredondadas */
+  appearance: none; /* Remove a seta padrão */
+  -webkit-appearance: none; /* Compatibilidade com Webkit */
+  -moz-appearance: none; /* Compatibilidade com Firefox */
+  cursor: pointer; /* Indica que é interativo */
+  margin-bottom: 20px; /* Espaço abaixo do select */
+  transition: all 0.3s ease; /* Efeito suave ao interagir */
+  text-align: center;
+}
+
+.containerpg2 select:focus {
+  border-color: #9b59b6; /* Cor de foco para o select */
+  box-shadow: 0 0 5px #9b59b6; /* Sombra para indicar foco */
+}
+
+
+
+.containerpg2 p2 {
+  display: flex; /* Habilita o flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza o texto horizontalmente */
+  align-items: center; /* Centraliza o texto verticalmente */
+  text-align: center; /* Garante que o texto dentro do parágrafo esteja centralizado */
+  color: rgb(255, 255, 255); /* Cor do texto (branco) */
+  font-size: 1.5rem; /* Tamanho do texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+  padding: 10px; /* Espaçamento interno */
+  margin: 10px 0; /* Espaçamento entre os parágrafos */
+  font-family: 'Arial', sans-serif; /* Fonte do projeto (ajustável conforme seu padrão) */
+
+}
+
+
+
+
+.gotacontainer {
+  display: flex; /* Habilita o Flexbox */
+  justify-content: center; /* Centraliza a gota horizontalmente */
+  align-items: center; /* Centraliza a gota verticalmente */
+  height: 100%; /* Garante que o contêiner ocupe toda a altura disponível */
+}
+
+.gotacss {
+  background-color: #be75da;
+  height: 145px;  /* Reduzindo o tamanho da gota */
+  width: 145px;   /* Reduzindo o tamanho da gota */
+  border-radius: 0% 50% 50% 50%;
+  box-shadow: inset -30px 12px 5px -9px #370f5f, 10px 10px 15px rgba(0, 0, 0, 0.8); /* Sombra interna e externa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 40px;  /* Move a gota para baixo */
+}
+
+#centralizartexto {
+  color: #ffffff; /* Cor do texto, branco */
+  font-size: 1.5rem; /* Tamanho do texto */
+  margin: 0; /* Remove qualquer margem padrão */
+  text-align: center; /* Garante que o texto dentro do p esteja centralizado */
+  font-weight: bold; /* Deixa o texto em negrito */
+  transform: rotate(-45deg); /* Desfaz a rotação do contêiner e deixa o texto reto */
+  font-family: 'Arial', sans-serif; /* Escolha uma fonte padrão (ajustável conforme o padrão do seu projeto) */
+}
+
+.perfumecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+/* Corpo do frasco */
+/* Corpo do frasco */
+.corpo {
+  width: 180px;
+  height: 180px;
+  background-color: #a36cc8; /* Cor do frasco */
+  border-radius: 50px 50px 25px 25px; /* Formato arredondado para o corpo */
+  box-shadow: inset -50px 20px 30px -10px #370f5f, 10px 10px 15px rgba(0, 0, 0, 0.8);
+  position: relative; /* Necessário para posicionamento da tampa */
+  z-index: 1; /* Coloca o corpo do frasco abaixo da tampa */
+}
+
+
+/* Tampa do frasco */
+.tampa {
+  width: 170px;
+  height: 10px;
+  background-color: #eae6ee; /* Cor da tampa */
+  border-radius: 15px 15px 0 0; /* Bordas arredondadas em cima */
+  position: absolute;
+  top: 0px; /* Ajusta a posição para que fique no topo do frasco */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Compensa o `left` para centralizar exatamente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para a tampa */
+  z-index: 2; /* Garante que a tampa fique sobre o corpo */
+}
+
+#centralizardiluicao{
+  color: #ffffff; /* Cor do texto, branco */
+  font-size: 1.5rem; /* Tamanho do texto */
+  margin-top: 45px;
+  text-align: center; /* Garante que o texto dentro do p esteja centralizado */
+  font-weight: bold; /* Deixa o texto em negrito */
+  font-family: 'Arial', sans-serif; /* Escolha uma fonte padrão (ajustável conforme o padrão do seu projeto) */
+
 }

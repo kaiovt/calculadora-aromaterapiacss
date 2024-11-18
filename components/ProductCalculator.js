@@ -106,7 +106,7 @@ const ProductCalculator = () => {
 
                     <label className="compositionLabel">Óleo:</label>
                     <input
-                        className="compositionInput"
+                        className="totais"
                         type="text"
                         value={composition.oil}
                         placeholder="Nome do Óleo"
@@ -115,7 +115,7 @@ const ProductCalculator = () => {
 
                     <label className="compositionLabel">Quantidade de Óleo Vegetal (em ml):</label>
                     <input
-                        className="compositionInput"
+                        className="totais"
                         type="number"
                         value={composition.quantity || ''}
                         onChange={(e) => handleFieldChange(index, 'quantity', Number(e.target.value))}
@@ -124,7 +124,7 @@ const ProductCalculator = () => {
 
                     <label className="compositionLabel">Preço Total do Frasco:</label>
                     <input
-                        className="compositionInput"
+                        className="totais"
                         type="number"
                         value={composition.price}
                         onChange={(e) => handleFieldChange(index, 'price', Number(e.target.value))}
@@ -133,7 +133,7 @@ const ProductCalculator = () => {
 
                     <label className="compositionLabel">Porcentagem de Diluição de Óleo Essencial (%):</label>
                     <input
-                        className="compositionInput"
+                        className="totais"
                         type="number"
                         value={composition.dilution}
                         onChange={(e) => handleFieldChange(index, 'dilution', Number(e.target.value))}
@@ -141,57 +141,59 @@ const ProductCalculator = () => {
                         max="100"
                     />
 
-<label className="compositionLabel">Número Total de Gotas no Frasco:</label>
-    <span className="totais">{composition.totalDrops || 0}</span>
+                    <label className="compositionLabel">Número Total de Gotas no Frasco:</label>
+                    <span className="totais">{composition.totalDrops || 0}</span>
 
-    <label className="compositionLabel">Gotas Utilizadas:</label>
-    <span className="totais">{composition.usedDrops || 0}</span>
+                    <label className="compositionLabel">Gotas Utilizadas:</label>
+                    <span className="totais">{composition.usedDrops || 0}</span>
 
-    <label className="compositionLabel">Valor por Gota:</label>
-    <span className="totais">{composition.valuePerDrop ? composition.valuePerDrop.toFixed(2) : '0.00'}</span>
+                    <label className="compositionLabel">Valor por Gota:</label>
+                    <span className="totais">{composition.valuePerDrop ? composition.valuePerDrop.toFixed(2) : '0.00'}</span>
 
-    <label className="compositionLabel">Total Composição {index + 1}:</label>
-    <span className="totais">{composition.totalComposition.toFixed(2)}</span>
-    
-    <button className="buttonRemove" type="button" onClick={() => handleRemoveComposition(index)}>REMOVER</button>
-    <button className="buttonAdd" type="button" onClick={handleAddComposition}>ADICIONAR</button>
-  </div>
-))}
+                    <label className="compositionLabel">Total Composição {index + 1}:</label>
+                    <span className="totais">{composition.totalComposition.toFixed(2)}</span>
+
+                    <button className="buttonRemove" type="button" onClick={() => handleRemoveComposition(index)}>REMOVER</button>
+                    <button className="buttonAdd" type="button" onClick={handleAddComposition}>ADICIONAR</button>
+                </div>
+            ))}
 
 
             <div className="compositionItem">
-            <h3>EXTRAS</h3>
-            {extras.map((extra, index) => (
-                <div key={index} className="compositionInput">
-                    <label className="compositionLabel">{extra.name}</label>
-                    <input
-                        className="extraInput"
-                        type="text"
-                        value={extra.name}
-                        onChange={(e) => {
-                            const updatedExtras = [...extras];
-                            updatedExtras[index].name = e.target.value;
-                            setExtras(updatedExtras);
-                        }}
-                    />
+                <h3>EXTRAS</h3>
+                {extras.map((extra, index) => (
+                    <div key={index} className="compositionInput">
+                        <label className="compositionLabel">{extra.name}</label>
+                        <input
+                            className="extraInput"
+                            type="text"
+                            value={extra.name}
+                            onChange={(e) => {
+                                const updatedExtras = [...extras];
+                                updatedExtras[index].name = e.target.value;
+                                setExtras(updatedExtras);
+                            }}
+                        />
 
-                    <label className="compositionLabel">Valor:</label>
-                    <input
-                        className="extraInput"
-                        type="number"
-                        value={extra.value}
-                        onChange={(e) => {
-                            const updatedExtras = [...extras];
-                            updatedExtras[index].value = Number(e.target.value);
-                            setExtras(updatedExtras);
-                        }}
-                    />
+                        <label className="compositionLabel">Valor:</label>
+                        <input
+                            className="extraInput"
+                            type="number"
+                            min="0" /* Define o valor mínimo permitido */
+                            value={extra.value}
+                            onChange={(e) => {
+                                const updatedExtras = [...extras];
+                                updatedExtras[index].value = Number(e.target.value);
+                                setExtras(updatedExtras);
+                            }}
+                        />
 
-                    <button className="buttonRemove" type="button" onClick={() => handleRemoveExtra(index)}>REMOVER</button>
-                    <button className="buttonAdd" type="button" onClick={handleAddExtra}>ADICIONAR</button>
-           
-                </div>
-            ))}
+                        <button className="buttonRemove" type="button" onClick={() => handleRemoveExtra(index)}>REMOVER</button>
+                        <button className="buttonAdd" type="button" onClick={handleAddExtra}>ADICIONAR</button>
+                    </div>
+                ))}
+
+
 
             </div>
             <div className="compositionItem">
@@ -208,7 +210,7 @@ const ProductCalculator = () => {
 
                 <label className="compositionLabel">Porcentagem de Lucro (%):</label>
                 <input
-                    className="compositionInput"
+                    className="compositionLabel"
                     type="number"
                     value={profitPercentage}
                     onChange={(e) => setProfitPercentage(Number(e.target.value))}
@@ -220,7 +222,7 @@ const ProductCalculator = () => {
                 <span className="totais">{calculateFinalValue(calculateTotalCost(), profitPercentage).toFixed(2)}</span>
             </div>
 
-            <GeneratePDF 
+            <GeneratePDF
                 compositions={compositions}
                 extras={extras}
                 profitPercentage={profitPercentage}
